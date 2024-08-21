@@ -1,0 +1,148 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+/*---Body---*/
+body{
+    font-family: "Inter", sans-serif;
+    background: #FAF9F6;
+    background: radial-gradient(#000000,#434343);
+}
+
+/*---form---*/
+.form-control{
+    display: flex;
+}
+.form-control input{
+    flex: 1;
+    outline: 0;
+    box-shadow: none;
+    border: 1px solid #858585;
+}
+.form-control button{
+    background-color: darkblue;
+    border: 0px;
+}
+.form-control button:hover{
+    background-color: darkcyan;
+}
+
+/*---date---*/
+.date-hour{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 1rem 1.5rem 1rem;
+    font-size: 20px;
+    font-weight: 500;
+    color: black;
+}
+#date{
+    flex: 1;
+}
+/*---button---*/
+button{
+    background-color: darkblue;
+    color: black;
+    border: 2px solid antiquewhite;
+    padding: 0.2rem 0.4rem;
+    font-size: .9rem;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    transition: .4s;
+    border: 1px solid #c3cad5;
+}
+button:hover{
+    background-color: darkcyan;
+    color: rgb(57, 58, 63);
+}
+button >i{
+    font-weight: bold;
+    pointer-events: none;
+}
+/*---input---*/
+input{
+    padding: .4rem .5rem;
+}
+/*---hide for edit task---*/
+.hide{
+    display: none;
+}
+/*---todo-container---*/
+.todo-container{
+    background-color: #FAF9F6;
+    border-radius: 15px;
+    width: 450px;
+    margin: 3rem auto;
+    padding: 1.5rem;
+}
+.todo-container header{
+    padding: 0 1rem 1rem;
+    border-bottom: 1px solid #ccc;
+}
+header > h1{
+    padding-left: 16px;
+    border-left: 5px solid #e74c3c;
+}
+/*---todo form, edit form---*/
+#todo-form, #edit-form{
+    padding: 1rem;
+    border-bottom: 1px solid #ccc;
+}
+#todo-form > p, #edit-form > p{
+    margin-bottom: .5rem;
+    font-weight: bold;
+}
+.form-control > input{
+    margin-right: .8rem;
+}
+/*---cancel-edit-btn---*/
+#cancel-edit-btn{
+    margin-top: 1rem;
+}
+/*---todo of default task---*/
+.todo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.3rem 0.2rem;
+    border-bottom: 1px solid #ddd;
+    transition: .3s;
+}
+.todo h3{
+    flex: 1;
+    font-size: 0.9rem;
+}
+.todo button{
+    margin-left: 0.2rem;
+    border-radius: 50%;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background: transparent;
+}
+.done{
+    background-color: rgb(49, 157, 219);
+}
+.done h3{
+    color: white;
+    text-decoration: line-through;
+    font-style: italic;
+}
+.todo button:hover, .done button{
+    background-color: #395169;
+    color: #ecf0f1;
+}
+.done > button:hover{
+    background-color: #ecf0f1;
+    color: #102f5e;
+}
+#todo-list{
+    max-height: 220px;
+    overflow: auto;
+}

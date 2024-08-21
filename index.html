@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List App</title>
+    <link rel="stylesheet" href="style.css">
+    <!---box icons link---->
+        <link rel="stylesheet"
+        href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+     <!---google fonts link--->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body onload="time()">
+    <div class="todo-container">
+        <div class="date-hour">
+            <p id="date">Date</p>
+            <p id="hour">Hour</p>
+        </div>
+        <header>
+            <h1>To Do List</h1>
+        </header>
+        <!---Add The Task--->
+        <form action="" id="todo-form">
+            <p>Add Your Task Here</p>
+            <div class="form-control">
+                <input type="text" id="todo-input" placeholder="Type Here About Your Next Task">
+                <button type="submit">
+                    <i class='bx bx-plus'></i>
+                </button>
+            </div>
+        </form>
+        <!---Edit The Task--->
+        <form action="" id="edit-form" class="hide">
+            <p>Edit Your Task</p>
+            <div class="form-control">
+                <input type="text" id="edit-input" placeholder="Type Here About Your Next Task">
+                <button type="submit">
+                    <i class='bx bx-check-double'></i>
+                </button>
+            </div>
+            <button type="button" id="cancel-edit-btn">Cancel</button>
+        </form>
+        <!---Task List--->
+        <div class="todo-list" id="todo-list">
+            <div class="todo">
+                <h3>Some Default Task</h3>
+                <button class="finish-todo">
+                    <i class='bx bx-check'></i>
+                </button>
+                <button class="edit-todo">
+                    <i class='bx bxs-edit-alt'></i>
+                </button>
+                <button class="remove-todo">
+                    <i class='bx bx-x'></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+    
+</body>
+</html>
