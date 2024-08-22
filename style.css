@@ -23,13 +23,10 @@ body{
     border: 1px solid #858585;
 }
 .form-control button{
-    background-color: darkblue;
+    background-color: green;
+    font-size: 20px;
     border: 0px;
 }
-.form-control button:hover{
-    background-color: rgb(187, 17, 17);
-}
-
 /*---date---*/
 .date-hour{
     display: flex;
@@ -45,20 +42,15 @@ body{
 }
 /*---button---*/
 button{
-    background-color: darkblue;
+    background-color: grey;
     color: black;
-    border: 2px solid antiquewhite;
+    border: 2px;
     padding: 0.2rem 0.4rem;
     font-size: 15px;
     cursor: pointer;
     justify-content: center;
     align-items: center;
     transition: .4s;
-    border: 1px solid #c3cad5;
-}
-button:hover{
-    background-color: rgb(139, 0, 12);
-    color: rgb(57, 58, 63);
 }
 button >i{
     font-weight: bold;

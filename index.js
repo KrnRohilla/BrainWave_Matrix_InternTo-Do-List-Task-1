@@ -56,7 +56,7 @@ const saveTodo = (text) =>{
 
     const removeBtn = document.createElement("button");
     removeBtn.classList.add("remove-todo");
-    removeBtn.innerHTML = '<i class="bx bx-x"></i>';
+    removeBtn.innerHTML = '<i class="bx bx-trash-alt"></i>';
     todo.appendChild(removeBtn);
 
     todoList.appendChild(todo);
