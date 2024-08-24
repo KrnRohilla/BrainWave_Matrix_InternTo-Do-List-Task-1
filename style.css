@@ -67,6 +67,45 @@ button >i{
     font-weight: bold;
     pointer-events: none;
 }
+button1{
+    background-color :transparent;
+    color: rgb(245, 15, 15);
+    text-decoration: underline;
+    border: 2px;
+    padding: 0.5rem 0.7rem;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    transition: .4s;
+}
+button2{
+    background-color :transparent;
+    color: rgb(245, 15, 15);
+    text-decoration: underline;
+    border: 2px;
+    padding: 0.5rem 0.7rem;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    transition: .4s;
+}
+button3{
+    background-color :transparent;
+    color: rgb(245, 15, 15);
+    text-decoration: underline;
+    border: 2px;
+    padding: 0.5rem 0.7rem;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    transition: .4s;
+}
 /*---input---*/
 input{
     padding: .4rem .5rem;
@@ -121,7 +160,7 @@ header > h1{
     font-size: 0.9rem;
 }
 .todo button{
-    color: #000000;
+    color: rgb(5, 5, 5);
     margin-left: 0.2rem;
     border-radius: 50%;
     font-size: 20px;
@@ -149,4 +188,58 @@ header > h1{
 #todo-list{
     max-height: 220px;
     overflow: auto;
+}
+.todo button1{
+    color: rgb(44, 206, 44);
+    margin-left: 0.1rem;
+    border-radius: 50%;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background: transparent;
+}
+.todo button1:hover, .done button1{
+    background-color: #9baab9;
+    color: #ecf0f1;
+}
+.done > button1:hover{
+    background-color: #ecf0f1;
+    color: #102f5e;
+}
+.todo button2{
+    color: rgb(123, 198, 241);
+    margin-left: 0.2rem;
+    border-radius: 50%;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background: transparent;
+}
+.todo button2:hover, .done button2{
+    background-color: #9baab9;
+    color: #ecf0f1;
+}
+.done > button2:hover{
+    background-color: #ecf0f1;
+    color: #102f5e;
+}
+.todo button3{
+    color: #f08275;
+    margin-left: 0.2rem;
+    border-radius: 50%;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background: transparent;
+}
+.todo button3:hover, .done button3{
+    background-color: #9baab9;
+    color: #ecf0f1;
+}
+.done > button3:hover{
+    background-color: #ecf0f1;
+    color: #102f5e;
 }
